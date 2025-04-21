@@ -1,0 +1,146 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e4c4d9, #97bed7);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    background: linear-gradient(135deg, #f17ac7, #95b9d1);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.sub-title {
+    font-size: 1.25rem;
+    animation: fadeIn 3s ease-in-out;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.intro .content {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db5a9b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding-bottom: 10x;
+    
+}
+
+.btnn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db5a9b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding-bottom: 10x;
+    margin-bottom: 90px;
+    
+}
+
+.btn:hover {
+    background-color: #ff66b2;
+}
+
+footer {
+    background: linear-gradient(135deg, #f17ac7, #a0ceed);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed ; bottom: 0;
+    width:100% ;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.galeri {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.gallery-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: center;     /* Rata tengah horizontal */
+    align-items: center;         /* Rata tengah vertikal */
+    height: 450px;
+}
+
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.message {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
